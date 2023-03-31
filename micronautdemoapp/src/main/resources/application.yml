@@ -1,11 +1,17 @@
 micronaut:
+  server:
+    port: 8083
   application:
     name: micronautdemoapp
 datasources:
   default:
+    url: jdbc:postgresql://localhost:5432/test
+    username: postgres
+    password: postgres
     driver-class-name: org.postgresql.Driver
     db-type: postgres
     dialect: POSTGRES
+
 jpa:
   default:
     properties:
